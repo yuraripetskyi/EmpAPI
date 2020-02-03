@@ -1,0 +1,12 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <form>
+      <input type="text" v-model="username" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" v-model="password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <div class="buttons">
+        <input type="button" :disabled="isDisabled()" class="fadeIn fourth" @click="login()" value="Log In">
+        <input type="button" :disabled="isDisabled()" class="fadeIn fourth" @click="register()" value="Create account">
+      </div>
+    </form>
+  </div>
+</div>
